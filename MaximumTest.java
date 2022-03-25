@@ -4,7 +4,7 @@ public class MaximumTest<T extends Comparable<T>> {
 		T x, y, z;
 	
 	public MaximumTest(T x, T y, T z) {
-		//super();
+		super();
 		this.x = x;
 		this.y = y;
 		this.z = z;
@@ -43,15 +43,15 @@ public class MaximumTest<T extends Comparable<T>> {
 	}
 	
 	public static void main(String[] args) {
-		Integer xInt = 2, yInt = 4, zInt = 7;
-		Float xFlt = 1.1f, yFlt = 2.2f, zFlt = 3.3f;
-		String xStr = "Parrot", yStr = "Peacoke", zStr ="Cat";
+		Integer xInt = 4, yInt = 6, zInt = 5;
+		Float xFl = 1.5f, yFl = 2.3f, zFl = 4.3f;
+		String xStr = "Pear", yStr = "Apple", zStr = "Orange";
 		
 		MaximumTest.testMaximum(xStr, yStr, zStr);
 		System.out.println("---------------------");
 		new MaximumTest(xInt, yInt, zInt).maximum();
 		System.out.println("----------------------");
-		new MaximumTest(xFlt, yFlt, zFlt).maximum();
+		new MaximumTest(xFl, yFl, zFl).maximum();
 		System.out.println("-----------------------");
 		new MaximumTest(xStr, yStr, zStr).maximum();
 	}
